@@ -1,0 +1,35 @@
+#kontak{
+	position: relative;
+	background: #fff;
+	font-size: 400%;
+	height: auto;
+}
+
+#kontak ul li .desc{
+	display: block;
+	color: #fff;
+}
+
+#link{
+	padding-top: 5%;
+}
+
+#kontak ul li a img{
+	width: 95%;
+	opacity: 1.7;
+}
+
+@media all and (max-width: 800px), only screen and (-webkit-min-device-pixel-ratio: 2) and (max-width: 1024px), only screen and (min--moz-device-pixel-ratio: 2) and (max-width: 1024px), only screen and (-o-min-device-pixel-ratio: 2/1) and (max-width: 1024px), only screen and (min-device-pixel-ratio: 2) and (max-width: 1024px), only screen and (min-resolution: 192dpi) and (max-width: 1024px), only screen and (min-resolution: 2dppx) and (max-width: 1024px) {
+	#kontak{
+		font-size: 300%;
+	}
+
+	#kontak #link ul li{
+		display: block;
+		width: 100%;
+	}
+
+	#kontak #link ul li a img{
+		width: 50%;
+	}
+}

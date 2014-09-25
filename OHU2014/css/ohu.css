@@ -1,0 +1,81 @@
+#kontak{
+	position: relative;
+	background: url(../img/BACKGROUNDOHU.jpg) no-repeat center bottom; 
+	-webkit-background-size: 100% 105%;
+	-moz-background-size: 100% 105%;
+	-o-background-size: 100% 105%;
+	background-size: 100% 105%;
+}
+
+#kontak h1{
+	font-size: 600%;
+	font-family: intro;
+	line-height: 80%;
+	margin: 10% auto 0;
+	padding: 0;
+}
+
+#kontak h2{
+	font-size: 300%;
+	font-family: ora;
+	line-height: 80%;
+	margin: 0% auto 5%;
+	padding: 0;
+	font-weight: normal;
+	color: #fa062c;
+}
+
+#kontak p{
+	font-size: 60%;
+	font-family: ora;
+	line-height: 90%;
+	margin: 0 auto 5%;
+	padding: 0;
+	color: black;
+}
+
+#kontak ul{
+	width: 90%;
+	padding: 0px 5%;
+	text-decoration: none;
+	display: block;
+	margin-top: 0%;
+	margin-left: auto;
+    margin-right: auto;
+	box-sizing: border-box;
+}
+
+#kontak ul li{
+	display: inline-block;
+	width: 20%;
+	margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-family: intro;
+    color: black;
+    font-family: ora;
+	text-decoration: none;
+	color: black;
+	font-size: 50%;
+	position: relative;
+}
+
+#kontak ul li .desc{
+	position: absolute;
+	top: 22%;
+	left: 2%;
+	width: 95%;
+	font-size: 80%;
+	display: none;
+	font-family: ora;
+	color: black;
+}
+	
+
+#kontak ul li img{
+	display: block;
+	width: 95%;
+	height: auto;
+	margin: 5% auto 15%;
+	opacity: 1;
+}

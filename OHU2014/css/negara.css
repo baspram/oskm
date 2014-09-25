@@ -1,0 +1,36 @@
+#negara img{
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 30%;
+	margin: auto;
+	height: 40%;
+	width: auto;
+	z-index: 1;
+	opacity: 1;
+}
+
+
+#negara #desc{
+	position: absolute;
+	top: 30%;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+	height: 50%;
+	width: auto;
+	z-index: 1;
+	text-align: center
+}
+
+#negara #desc h1{
+	font-family: intro;
+	font-size: 300%;
+}
+
+#negara #desc p{
+	font-family: ora;
+	font-size: 150%;
+}

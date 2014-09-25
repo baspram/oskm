@@ -1,0 +1,59 @@
+@media only screen and (min-width: 481px) and (max-width: 768px) , (orientation: portrait) {
+	.fullpage{
+		padding-top: 10%;
+		min-height: 50%;
+	}
+
+	#navbar{
+		position: fixed;
+		top: 0;
+		left: 0;
+		font-size: 150%;
+	}
+
+	#header img{
+		z-index: 0;
+		
+	}
+
+    #cerita #sright{
+    	width: 100%;
+    	float: ;
+    }
+
+    #cerita #sright img{
+		width: 70%;
+		height: auto;
+		margin:auto auto 10%;
+	}	
+	#cerita #sleft{
+		width: 100%;
+		float: ;
+		text-align: center;
+	}
+
+	#negeri{
+		padding-top: 20%;
+	}
+
+	#negeri .istana{
+		width: 100%;
+		float: ;
+	}
+
+	#negeri .istana img{
+		margin-bottom: 5%;
+		width: 40%;
+	}
+
+	#kontak #link ul li{
+		width: 30%;
+		padding: 0% 5%;
+		margin-bottom: 5%;
+	}
+	#kontak #link ul li a img{
+		width: 100%;
+		margin-bottom: 5%;
+	}
+    /* Other rules go here */
+}

@@ -1,0 +1,909 @@
+@font-face{
+	font-family: intro;
+	src: url(../font/Intro.otf);
+}
+
+@font-face{
+	font-family: ora;
+	src: url(../font/OratorStd.otf);
+}
+
+@font-face{
+	font-family: oras;
+	src: url(../font/OratorStd-Slanted.otf);
+}
+
+html,body{
+	height: 100%;
+    width: 100%;
+	margin: 0px;
+	padding: 0px;
+	background-color: white;
+	font-size: 100%;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+div{
+	overflow: hidden;
+}
+
+a{
+	text-decoration: none;
+}
+
+#counter{
+	position: fixed;
+	right: 0;
+	top: 0;
+	width: 200px;
+	height: auto;
+	background-color: green;
+	overflow: hidden;
+	z-index: 101;
+	display: none;
+}
+
+.fullpage{
+	content: "";
+	width: 100%;
+	min-height: 100%;
+	max-height: auto;
+	margin: 0px;
+	padding: 0px;
+}
+
+.halfpage{
+	min-height: 50%;
+	max-height: auto;
+}
+
+.scroll{
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	background-color: white;
+	text-align: center;
+	width: 10%;
+	min-height: 5%;
+	margin: auto auto 0;
+	display: block;
+	padding-top: 1%;
+	-webkit-border-radius: 50% 50% 0px 0px;
+      -moz-border-radius: 50% 50% 0px 0px;
+      -o-border-radius: 50% 50% 0px 0px;
+      border-radius: 50% 50% 0px 0px;
+      background-color: #fff;
+}
+
+.scroll img{
+	width: 30%;
+	height: auto;
+
+}
+
+.cekboarder{
+	border: 1px solid black;
+}
+
+.pink{
+	background-color: #fa062c;
+	color:white;
+}
+
+.yellow{
+	background-color:  #ffe401;
+	color:  white;
+}
+
+.blue{
+	background-color: #62c6ea;
+	color: white;
+}
+
+.grey{
+	background-color: #bdc3c7;
+	color: #fa062c;	
+}
+
+.black{
+	background-color: black;
+	color: white;
+}
+
+
+#header{
+	background: url(../img/header.jpg) no-repeat center bottom; 
+	-webkit-background-size: 100% 100%;
+	-moz-background-size: 100% 100%;
+	-o-background-size: 100% 100%;
+	background-size: 100% 100%;
+	background-color:  #ffe401;
+	height: 100%;
+	position: relative;
+}
+
+
+#header > img{
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+	height: 766px;
+	width: 1366px;
+	z-index: 0;
+	opacity: 1;
+}
+
+.headmob{
+	display: none;
+	position: relative;
+}
+#home{
+	position: relative;
+
+
+}
+#navi{
+	position: relative;
+	overflow: visible;
+}
+
+#navbar{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: auto;
+	background-color: black;
+	padding: 0% 0px;
+	box-sizing: border-box;
+	display: block;
+	z-index: 100;
+}
+
+#navbar ul{
+	width: 90%;
+	padding: 0px;
+	text-decoration: none;
+	display: block;
+	margin-left: auto;
+    margin-right: auto;
+}
+
+#navbar ul li{
+	display: inline-block;
+	width: 19%;
+	margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+#navbar ul li a{
+	font-family: ora;
+	text-decoration: none;
+	color: white;
+}
+
+#navbar ul li a::hover{
+	text-decoration: none;
+	color: white;
+}
+
+#cerita{
+	padding: 10% 15% 2%;
+	box-sizing: border-box;
+	position: relative;
+	overflow: hidden;	
+	background: url(../img/BACKGROUND1.jpg) no-repeat center top; 
+	-webkit-background-size: 100% 100%;
+	-moz-background-size: 100% 100%;
+	-o-background-size: 100% 100%;
+	background-size: 100% 100%;
+	font-family: ora;
+	color: black;
+	font-weight: normal;
+	height: 100%;
+
+}
+
+#cerita #sleft{
+	content: "";
+	float: left;
+	width: 43%;
+	height: auto;
+	margin: 2% auto auto 0;
+	padding: 0px 5% 0% 0%;
+	box-sizing: border-box;
+	font-size: 120%;
+	opacity: 1;
+}
+
+#cerita #sright{
+	content: "";
+	float: right;
+	width: 53%;
+	height: auto;
+	margin: 2% auto auto;
+	padding: 0px 5% 0%;
+	box-sizing: border-box;
+	opacity: 1;
+}
+
+#cerita #sright img{
+	display: block;
+	width: 100%;
+	height: auto;
+	margin:auto;
+}
+
+#hid{
+	display: none;
+		content: "";
+	float: left;
+	width: 43%;
+	height: auto;
+	margin: 2% auto auto 0;
+	padding: 0px 5% 0% 0%;
+	box-sizing: border-box;
+	font-size: 120%;
+	opacity: 1;
+}
+
+#negeri{
+	padding: 5% 10%;
+	box-sizing: border-box;	
+	position: relative;
+	text-align: center;
+	font-family: ora;
+}
+
+#negeri p{
+	margin-top: 5%;
+	display: block;
+	font-size: 200%;
+	font-family: ora;
+	word-wrap:break-word;
+}
+
+#negeri #istana{
+	opacity: 1;
+	font-family: intro;
+	font-size: 80%;
+}
+
+#negeri .istana{
+	float: left;
+	width: 33%;
+	height:auto;
+	content: "";
+	margin: 2% auto;
+	padding: 2% 1% 2%;
+	box-sizing: border-box;
+}
+
+#negeri a{
+	text-decoration: none;
+	text-transform: none;
+}
+
+#istana1 a{
+		color: #62c6ea;
+	}	
+
+#istana2 a{
+
+	color:  #fa062c;
+}
+
+#istana3 a{
+	color: #ffe401;
+}
+
+#negeri .istana img{
+	display: block;
+	width: 70%;
+	height: auto;
+	margin: 0px auto 5%;
+	opacity: 1;
+}
+
+.negara{
+	display: none;
+}
+
+#timeline{
+	position: relative;
+	padding-top: 7%;
+	background: url(../img/BACKGROUNDTIMELINE.jpg) no-repeat center bottom; 
+	-webkit-background-size: 100% 100%;
+	-moz-background-size: 100% 100%;
+	-o-background-size: 100% 100%;
+	background-size: 100% 100%;
+	font-family: intro;
+}
+
+#timeline h1{
+	font-size: 600%;
+	display: block;
+	text-align: center;
+	margin: 0;
+
+	line-height: 60%;
+	padding: 0;
+}
+
+#timeline h2{
+	color: #ffe401;
+	font-size: 300%;
+	display: block;
+	text-align: center;
+	line-height: 60%;
+	margin: 0;
+	padding: 0;
+}
+
+
+#timeline img{
+	width: 80%;
+	height: 40%;
+	display: block;
+	margin: 0px auto;
+	margin-top: 5%;
+}
+
+#timeline .dash{
+	width: 100%;
+	height: 3%;
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	background-color: #fff;
+	content: "";
+	z-index: 1;
+	margin: auto;
+}
+#timeline ul{
+	width: 90%;
+	padding: 0px 5%;
+	text-decoration: none;
+	display: block;
+	margin-top: 9%;
+	margin-left: auto;
+    margin-right: auto;
+	box-sizing: border-box;
+	position: relative;
+    z-index: 2;
+}
+
+#timeline ul li{
+	display: inline-block;
+	width: 33%;
+	margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-family: ora;
+    color: #ffe401;
+    font-size: 150%;
+}
+
+#timeline ul li a{
+	text-decoration: none;
+	color: white;
+}
+
+#timeline ul li a img{
+	display: block;
+	width: 50%;
+	height: auto;
+	margin: 0 auto 5%;
+}
+
+#defile{
+	display: none;
+	background: url(../img/MDEFILE.png) no-repeat right bottom; 
+	background-color:  #fa062c;	
+	-webkit-background-size: contain;
+	-moz-background-size: contain;
+	-o-background-size: contain;
+	background-size: contain;
+	padding-top: 10%;
+}
+
+#drama{
+	display: none;
+	background: url(../img/MDRAMA.png) no-repeat left bottom; 
+	background-color: #62c6ea;
+	-webkit-background-size: 40% 100%;
+	-moz-background-size: 40% 100%;
+	-o-background-size: 40% 100%;
+	background-size: 40% 100%;
+	padding-top: 10%;
+}
+
+.ohu{
+	padding: 0% 0% 5%;
+	box-sizing: border-box;
+	position: relative;
+	overflow: hidden;
+}
+
+.ohu .sleft{
+	content: "";
+	float: left;
+	width: 60%;
+	height: auto;
+	margin: 5% auto auto 5%;
+	padding: 0px 5% 0%;
+	box-sizing: border-box;
+	font-size: 120%;
+	opacity: 1;
+}
+
+.ohu .sleft h2{
+	color: #ffe401;
+}
+
+.ohu .sright h2{
+	color: #fff;
+}
+
+.ohu h1{
+	font-family: intro;
+	font-size: 300%;
+	margin: 0;
+	padding: 0;
+	line-height:80%
+}
+
+.ohu h2{
+	font-family: ora;
+	margin: 0;
+	padding: 0;
+	font-weight: normal;
+	line-height:80%;
+	font-size:100%;
+}
+
+.ohu p{
+	font-family: ora;
+}
+
+.ohu .sright{
+	content: "";
+	float: right;
+	width: 60%;
+	height: auto;
+	margin: 5% 5% auto auto;
+	padding: 3% 0% 0%;
+	box-sizing: border-box;
+	font-size: 120%;
+	opacity: 1;
+	text-align: right;
+}
+
+#ohu{
+	display: none;
+	position: relative;
+	background-color:  #ffe401;
+	text-align: center;
+	padding-top: 5%;
+}
+
+#ohu h2{
+	color: #fa062c;
+
+	font-size: 150%;
+}
+
+#ohu p{
+	color: black;
+	font-size: 100%;
+	line-height: 100%;
+}
+
+#ohu ul{
+	width: 90%;
+	padding: 0px 5%;
+	text-decoration: none;
+	display: block;
+	margin-top: 0%;
+	margin-left: auto;
+    margin-right: auto;
+	box-sizing: border-box;
+}
+
+#ohu ul li{
+	display: inline-block;
+	width: 100%;
+	margin-top: 10%;
+	margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-family: ora;
+    color: black;
+    font-size: 120%;
+}
+
+
+#ohu ul li img{
+	display: block;
+	width: 80%;
+	height: auto;
+	margin: 0 auto 5%;
+}
+
+#ohu ul li p{
+	font-size: 100%;
+}
+
+#organigram{
+	position: relative;
+	height: auto;
+	padding-top: 7%;
+	background: #62c6ea;
+	font-family: intro;
+}
+#organigram h1{
+	font-size: 600%;
+	display: block;
+	text-align: center;
+	margin: 0;
+
+	line-height: 60%;
+	padding: 0;
+}
+
+#organigram h2{
+	color: #ffe401;
+	font-size: 300%;
+	display: block;
+	text-align: center;
+	line-height: 60%;
+	margin: 0;
+	padding: 0;
+}
+
+#organigram #org{
+	width: 100%;
+	display: block;
+	margin: 5% auto;
+	z-index: 0;
+}
+
+#org img{
+	display: block;
+	width: 80%;
+	margin:auto;
+}
+
+#organigram #vimi{
+	width: 100%;
+	display: block;
+	margin: 0px auto;
+}
+
+#vimi img{
+	display: block;
+	width: 80%;
+	margin:auto;
+}
+
+#organigram #lis{
+	display: none;
+}
+
+
+#kontak{
+	text-align: center;
+	position: relative;
+	background: url(../img/BACKGROUNDKONTAK.jpg) no-repeat center bottom; 
+	-webkit-background-size: 100% 100%;
+	-moz-background-size: 100% 100%;
+	-o-background-size: 100% 100%;
+	background-size: 100% 100%;
+}
+
+#kontak h1{
+	font-size: 600%;
+	font-family: intro;
+}
+
+#kontak ul{
+	width: 90%;
+	padding: 0px 5%;
+	text-decoration: none;
+	display: block;
+	margin: 0 auto auto;
+	box-sizing: border-box;
+}
+
+#kontak ul li{
+	display: inline-block;
+	width: 20%;
+	margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-family: intro;
+    color: black;
+}
+
+#kontak ul li a{
+	font-family: intro;
+	text-decoration: none;
+	color: white;
+}
+
+#kontak ul li a img{
+	display: block;
+	width: 70%;
+	height: auto;
+	margin: 0 auto 15%;
+}
+
+#kontak .scroll{
+	background-color: #fa062c;
+}
+
+@media all and (max-width: 800px), only screen and (-webkit-min-device-pixel-ratio: 2) and (max-width: 1024px), only screen and (min--moz-device-pixel-ratio: 2) and (max-width: 1024px), only screen and (-o-min-device-pixel-ratio: 2/1) and (max-width: 1024px), only screen and (min-device-pixel-ratio: 2) and (max-width: 1024px), only screen and (min-resolution: 192dpi) and (max-width: 1024px), only screen and (min-resolution: 2dppx) and (max-width: 1024px) {
+	.fullpage{
+		padding-top: 10%;
+		min-height: 60%;
+		max-height: auto;
+	}
+	#navbar{
+		position: fixed;
+		top: 0;
+		left: 0;
+		font-size: 100%;
+	}
+
+	#header {
+		background:  #ffe401;
+		padding-top: 0%;
+		height: 100%;
+	}
+
+	#header > img{
+		display: none;
+	}
+
+	#header .headmob{
+		display: block;
+		width: 100%;
+		height: 100%;
+	}
+
+	#header .headmob img{	
+		position: absolute;
+		top: 0;
+		right: 0;
+		left: 0;
+		bottom: 0;
+		width: 40%;
+		margin: auto;
+		z-index: 1;
+	}
+	#cerita{
+	background: url(../img/MHALAMAN.png) no-repeat left top; 
+	-webkit-background-size: contain;
+	-moz-background-size: contain;
+	-o-background-size:contain;
+	background-size: contain;
+	background-color:  #fff;
+	padding-top: 20%;
+	height: auto;
+	}
+
+    #cerita #sright{
+    	width: 100%;
+    	float: ;
+    	margin: auto;
+    	display: block;
+    }
+
+    #cerita #sright img{
+		width: 100%;
+		height: auto;
+		margin:auto auto 10%;
+	}	
+	#cerita #sleft{
+		width: 100%;
+		float: ;
+		text-align: left;
+		margin: auto;
+	}
+
+	#cerita #hid{
+		display: block;
+		width: 100%;
+	}
+
+	#home{
+		display: none;
+	}
+
+	#samsakka{
+		display: block;
+	}
+
+	#widya{
+		display: block;
+	}
+
+	#astera{
+		display: block;
+	}
+
+
+
+#samsakka {
+	position: relative;
+	background: url(../img/MSAMSAKKA.png) no-repeat left bottom; 
+	-webkit-background-size: contain;
+	-moz-background-size: contain;
+	-o-background-size: contain;
+	background-size: contain;
+	background-color: #62c6ea;
+}
+
+#widya {
+	position: relative;
+	background: url(../img/MWIDyA.png) no-repeat right bottom; 
+	-webkit-background-size: contain;
+	-moz-background-size: contain;
+	-o-background-size: contain;
+	background-size: contain;
+	background-color: #fa062c;
+}
+
+
+#astera {
+	position: relative;
+	background: url(../img/MASTERA.png) no-repeat left bottom; 
+	-webkit-background-size: contain;
+	-moz-background-size: contain;
+	-o-background-size: contain;
+	background-size: contain;
+	background-color: #ffe401;
+}
+
+
+
+.negara{
+	display: block;
+	height: auto;	
+	font-family: ora;
+	font-size: 100%;
+}
+.negara .sleft{
+	position: relative;
+	float: left;
+	width: 55%;
+	height: 100%;
+	margin: 2% auto 0 5%;
+	padding: 0px 0% 0%;
+	box-sizing: border-box;
+	text-align: right;
+}
+
+.negara .sright{
+	position: relative;
+	float: right;
+	width: 55%;
+	height: 100%;
+	margin: 2% 5% 0 auto;
+	padding: 0% 0% 0%;
+	box-sizing: border-box;
+	text-align: left;
+}
+
+.negara img{
+	width: 60%;
+	display: block;
+	margin: auto;
+}
+
+.negara h1{
+	font-family: intro;
+	text-align: center;
+	font-size: 150%;
+}
+
+	#defile{
+		display: block;
+	}
+
+	#drama{
+		display: block;
+	}
+
+	#ohu{
+		display: block;
+	}
+
+	.ohu{
+		font-size: 80%;
+	}
+
+	#timeline {
+		display: none;
+	}
+
+	#organigram{
+		padding-top: 10%;	
+	}
+
+	#organigram h1{
+		font-size: 200%;
+	}
+
+	#organigram h2{
+		font-size: 200%;
+	}
+	#organigram img{
+		display: none;
+
+	}
+
+	#organigram #lis{
+		font-family: ora;
+		display: block;
+	}
+
+	#organigram #lis ul{
+		list-style: none;
+		width: 80%;
+		margin: auto;
+		margin-bottom: 10%;
+		font-size: 80%;
+	}
+
+	#organigram #lis .head{
+		font-weight: bold;
+		margin-top: 2%;
+	}
+
+	#organigram #lis .big{
+		font-size: 200%;
+		margin-bottom: 5%;
+	}
+
+	#organigram ol{
+		list-style: decimal;
+	}
+
+	#kontak{
+		background: url(../img/MKONTAK.png) no-repeat left bottom; 
+	-webkit-background-size: 80% 50%;
+	-moz-background-size: 80% 50%;
+	-o-background-size:80% 50%;
+	background-size: 80% 50%;
+	background-color:  #ffe401;
+	height: 70%;
+	}
+
+	#kontak h1{
+		font-size: 200%;
+	}
+
+	#kontak #link ul{
+		margin-top: 5%;
+	}
+	#kontak #link ul li{
+		width: 10%;
+		padding: 0% 5%;
+	}
+	#kontak #link ul li a img{
+		width: 100%;
+	}
+	#kontak > a {
+		display: none;
+	}
+
+
+}

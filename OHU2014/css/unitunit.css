@@ -1,0 +1,99 @@
+#cerita{
+	padding: 5% 10% 5%;
+	box-sizing: border-box;
+	position: relative;
+	background: #fff;
+	overflow: visible;
+}
+
+#cerita h1{
+	font-family: intro;
+	font-size: 200%;
+	margin: 0;
+	padding: 0;
+	line-height:100%
+}
+
+#cerita  h2{
+	font-family: ora;
+	font-size: 150%;
+	margin: 0;
+	padding: 0;
+	font-weight: normal;
+	line-height:100%
+}
+
+#cerita  p{
+	font-family: ora;
+	font-size: 100%;
+}
+
+#cerita #sright{
+	content: "";
+	display: block;
+	width: 100%;
+	height: auto;
+	margin: auto;
+	padding: 3% 0% 0%;
+	box-sizing: border-box;
+	font-size: 120%;
+	opacity: 1;
+	text-align: right;
+}
+
+#cerita #sleft{
+	content: "";
+	display: block;
+	width: 100%;
+	height: auto;
+	margin: auto;
+	padding: 3% 5% 0%;
+	box-sizing: border-box;
+	font-size: 120%;
+	opacity: 1;
+}
+
+#cerita #sleft img{
+	width: 20%;
+	height: auto;
+	float: left;
+	margin-right: 5%;
+}
+
+#cerita #sright img{
+	width: 20%;
+	height: auto;
+	float: right;
+	margin-left: 5%;
+}
+
+@media all and (max-width: 800px), only screen and (-webkit-min-device-pixel-ratio: 2) and (max-width: 1024px), only screen and (min--moz-device-pixel-ratio: 2) and (max-width: 1024px), only screen and (-o-min-device-pixel-ratio: 2/1) and (max-width: 1024px), only screen and (min-device-pixel-ratio: 2) and (max-width: 1024px), only screen and (min-resolution: 192dpi) and (max-width: 1024px), only screen and (min-resolution: 2dppx) and (max-width: 1024px) {
+	#cerita h1{
+	text-align: center;
+	}
+
+	#cerita  h2{
+		text-align: center;
+	}
+
+	#cerita  p{
+		font-family: ora;
+		font-size: 100%;
+		text-align: left;
+	}
+
+	#cerita #sright img{
+		float: none;
+		width: 50%;
+		display: block;
+		margin: auto;
+	}
+
+	#cerita #sleft img{
+		float: none;
+		width: 50%;
+		display: block;
+		margin: auto;
+	}
+
+}

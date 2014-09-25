@@ -1,0 +1,49 @@
+#cerita{
+	padding: 0% 0% 5%;
+	box-sizing: border-box;
+	position: relative;
+	overflow: hidden;	
+	background: url(../img/MDRAMA.png) no-repeat bottom left; 
+	-webkit-background-size: contain;
+	-moz-background-size: contain;
+	-o-background-size: contain;
+	background-size: contain;
+	background-color: #62c6ea;
+}
+
+
+#cerita h1{
+	font-family: intro;
+	font-size: 500%;
+	margin: 0;
+	padding: 0;
+	line-height:80%
+}
+
+#cerita  h2{
+	font-family: ora;
+	color: #fff;
+	margin: 0;
+	padding: 0;
+	font-weight: normal;
+	line-height:80%
+}
+
+#cerita  p{
+	font-family: ora;
+	font-size: 150%;
+}
+
+#cerita #sright{
+	content: "";
+	float: right;
+	width: 50%;
+	height: auto;
+	margin: 10% 5% auto auto;
+	padding: 3% 0% 0%;
+	box-sizing: border-box;
+	font-size: 120%;
+	opacity: 1;
+	text-align: right;
+}
+
