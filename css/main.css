@@ -1,0 +1,661 @@
+@font-face{
+	font-family: majala;
+	src: url(../font/majalla.ttf);
+}
+
+@font-face{
+	font-family: majalab;
+	src: url(../font/majallab.ttf);
+}
+
+html,body{
+	height: 100%;
+    width: 100%;
+	margin: 0px;
+	padding: 0px;
+	background-color: #f9fbd4;
+	font-size: 100%;
+	font-family: majala;
+}
+
+div{
+	overflow: hidden;
+}
+
+
+a{
+	text-decoration: none;
+}
+
+#counter{
+	position: fixed;
+	right: 0;
+	top: 0;
+	width: 200px;
+	height: auto;
+	background-color: green;
+	overflow: hidden;
+	z-index: 101;
+}
+
+.fullpage{
+	content: "";
+	width: 100%;
+	min-height: 100%;
+	max-height: auto;
+	margin: 0px;
+	
+	background: url(../img/backbot.png) no-repeat center bottom; 
+	-webkit-background-size: contain;
+	-moz-background-size: contain;
+	-o-background-size: contain;
+	background-size: contain;
+
+	padding: 5% 0 0;
+}
+
+.halfpage{
+	min-height: 50%;
+	max-height: auto;
+}
+
+.scroll{
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	background-color: white;
+	text-align: center;
+	width: 10%;
+	min-height: 5%;
+	margin: auto auto 0;
+	display: block;
+	padding-top: 1%;
+	/*-webkit-border-radius: 20% 20% 0px 0px; 
+      -moz-border-radius: 20% 20% 0px 0px;
+      -o-border-radius: 20% 20% 0px 0px;*/
+      border-radius: 50% 50% 0px 0px;
+}
+
+#lg{
+	position: absolute;
+	top: 2%;
+	left: 10%;
+	width: 3.5%;
+	z-index: 501;
+}
+
+#lg img{
+	width: 100%;
+	height: auto;
+}
+
+.lg span{
+	display: none;
+}
+
+.scroll img{
+	width: 60%;
+	height: auto;
+}
+
+.cekboarder{
+	border: 1px solid black;
+}
+
+.pink{
+	background-color: #fa062c;
+	color:white;
+}
+
+.yellow{
+	background-color:  #ffe401;
+	color:  white;
+}
+
+.blue{
+	background-color: #62c6ea;
+	color: white;
+}
+
+.grey{
+	background-color: #bdc3c7;
+	color: #fa062c;	
+}
+
+.black{
+	background-color: black;
+	color: white;
+}
+
+
+#header{
+	background: url(../img/header.jpg) no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	height: 100%;
+	position: relative;
+}
+
+
+#header img{
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+	height: 40%;
+	width: auto;
+	z-index: 1;
+	opacity: 1;
+}
+
+#header h1{
+	font-family: majala;
+	color:  #2d2e71;
+	margin: 0px;
+}
+
+#home{
+	position: relative;
+}
+
+
+#visimisi{
+	padding: 3% 10% 3%;
+	box-sizing: border-box;	
+	position: relative;
+	color: #2d2e71;
+	font-family: majala;
+	font-size: 120%;
+}
+
+#visimisi h1{
+	display: block;
+	font-size: 250%;
+	font-family: majalab;
+	word-wrap:break-word;
+}
+
+
+#logo{
+	padding: 5% 10% 4% 5%;
+	box-sizing: border-box;
+	position: relative;
+}
+
+#logo #sright{
+	content: "";
+	float: left;
+	width: 30%;
+	height: auto;
+	margin: 5% 0% auto 5%;
+	padding: 0px 0% 0%;
+	box-sizing: border-box;
+	font-size: 120%;
+	opacity: 1;
+	color: #2d2e71;
+	font-family: majala;
+	font-size: 120%;
+	list-style-type: decimal;
+}
+
+#logo #sleft{
+	content: "";
+	float: left;
+	width: 35%;
+	height: auto;
+	margin: 5% 0% auto 10%;
+	padding: 0px 0% 0% 5%;
+	box-sizing: border-box;
+	opacity: 1;
+}
+
+#logo #sleft img{
+	display: block;
+	width: 100%;
+	height: auto;
+	margin:auto;
+}
+
+
+
+#maskot{
+	padding: 8% 10% 5% 10%;
+	box-sizing: border-box;
+	position: relative;
+	font-family: majala;
+	font-size: 100%;
+	color: #2d2e71;
+	height: auto;
+}
+
+#maskot #nama img{
+	width: 30%;
+	display: block;
+	margin: auto;
+}
+
+#maskot .des{
+	display: none;
+}
+
+#maskot .nama{
+	display: none;
+}
+
+#maskot #sleft{
+	content: "";
+	float: left;
+	width:35%;
+	height: auto;
+	margin: 2% auto auto 10%;
+	padding: 0px 0% 0% 5%;
+	box-sizing: border-box;
+	opacity: 1;
+}
+
+#maskot #sright{
+	content: "";
+	float: left;
+	width:40%;
+	height: auto;
+	margin: 5% auto auto 0;
+	padding: 0px 4% 0%;
+	box-sizing: border-box;
+	
+	opacity: 1;
+}
+
+#maskot #sleft img{
+	display: block;
+	width:80%;
+	height: auto;
+	float: right;
+}
+
+#maskot #sright img{
+	display: block;
+	width: 50%;
+	height: auto;
+}
+
+#maskot #des p{
+		font-size: 120%;
+		line-height: 200%;
+		display: none;
+}
+
+#maskot .video{
+	position: relative;
+	padding-top: 5%;
+	padding-bottom: 7%;
+	display: block;
+	width: 100%;
+	height: 50%;
+	margin: auto;
+}
+
+.video iframe{
+	width: 60%;
+	height: 60%;
+	display: block;
+	margin: auto;
+}
+
+#organigram{
+	position: relative;
+}
+
+#organigram h1{
+	font-size: 400%;
+	display: block;
+	font-family: majalab;
+	text-align: center;
+	margin-bottom: 0;
+	color: #2d2e71;
+}
+
+
+#organigram img{
+	width: 95%;
+	display: block;
+	margin: 0px auto 3%;
+}
+
+#organigram ul{
+	width: 60%;
+	margin: auto auto 5%;
+	list-style: none;
+	font-family: majala;
+	color: #2d2e71;
+	font-size: 130%;
+}
+
+#organigram ul li{
+	margin: 2% auto;
+}
+
+#organigram ul .head{
+	margin: 6% auto 0;
+	font-weight: bold;
+	font-size: 150%;
+}
+
+#FAQ{
+	color: #2d2e71;
+}
+
+#FAQ h1{
+	display: block;
+	margin: auto;
+	text-align: center;
+	font-size: 500%;
+	font-family: majalab;
+}
+
+#FAQ ol{
+	display: block;
+	width: 80%;
+	margin: auto;
+	margin-bottom: 5%;
+}
+
+#FAQ p{
+	margin-top: 0;
+	padding-top: 0;
+	font-size: 120%;
+}
+
+#FAQ h2{
+	margin-bottom: 0;
+	padding-bottom: 0;
+}
+
+#FAQ img{
+	display: block;
+	width: 50%;
+	margin: auto;
+}
+
+#FAQ .rektorat img{
+	width: 100%;
+}
+
+#FAQ .ponco{
+	width: 30%;
+}
+#kontak{
+	height: 90%;
+	background: url(../img/backkon.jpg) no-repeat center bottom; 
+	-webkit-background-size: 100% 100%;
+	-moz-background-size: 100% 100%;
+	-o-background-size: 100% 100%;
+	background-size: 100% 100%;
+	text-align: center;
+	position: relative;
+	padding-top: 3%;
+	color: #2d2e71;
+}
+
+#kontak h1{
+	color: #2d2e71;
+	font-size: 500%;
+	font-family: majalab;
+}
+
+#kontak ul{
+	width: 90%;
+	padding: 0px 5%;
+	text-decoration: none;
+	display: block;
+	margin-top: 0%;
+	margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0;
+	box-sizing: border-box;
+	font-size: 300%;
+}
+
+#kontak ul li{
+	display: inline-block;
+	width: 30%;
+	margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+#kontak ul li a{
+	font-family: majala;
+	text-decoration: none;
+	color: white;
+}
+
+#kontak ul li a img{
+	display: block;
+	width: 50%;
+	height: auto;
+	margin: 0 auto;
+}
+
+#footer{
+	position: relative;
+	height: auto;
+	padding: auto 15%;
+	font-family: majala;
+	color: #2d2e71;
+
+}
+
+#footer h1{
+	font-size: 250%;
+}
+
+#sponsor{
+	width: 60%;
+	position: relative;
+	float: left;
+	padding-left: 5%;
+}
+
+#sponsor ul{
+	display: inline;
+
+    list-style-type: none;
+}
+
+#sponsor ul li{
+	display: inline-block;
+}
+
+.tsel{
+	width: 20%;
+
+	float: left;
+}
+
+.asi{
+	width: 18%;
+	float: left;
+}
+
+.pos{
+	width: 13%;
+	float: left;
+}
+
+.pti{
+	width: 10%;	float: left;
+}
+
+#sponsor img{
+	width: 100%;
+	padding: 3%;
+}
+#creator{
+	width: 30%;
+	float: left;
+}
+
+#creator p{
+	font-size: 120%;
+}
+
+
+@media all and (max-width: 800px), only screen and (-webkit-min-device-pixel-ratio: 2) and (max-width: 1024px), only screen and (min--moz-device-pixel-ratio: 2) and (max-width: 1024px), only screen and (-o-min-device-pixel-ratio: 2/1) and (max-width: 1024px), only screen and (min-device-pixel-ratio: 2) and (max-width: 1024px), only screen and (min-resolution: 192dpi) and (max-width: 1024px), only screen and (min-resolution: 2dppx) and (max-width: 1024px) {
+	.fullpage{
+		background: url(../img/MOSKM.png) no-repeat center bottom; 
+	-webkit-background-size: contain;
+	-moz-background-size: contain;
+	-o-background-size: contain;
+	background-size: contain;
+
+		padding-top: 10%;
+		padding-bottom: 20%; 
+		min-height: 50%;
+	}
+
+	#cssmenu{
+		position: fixed;
+		top: 0;
+		left: 0;
+		font-size: 150%;
+	}
+	#lg{
+		display: none;
+	}
+	.lg span{
+		display: block;
+	}
+
+	#header img{
+		z-index: 0;
+	}
+
+    #logo #sleft{
+    	width: 100%;
+
+    	float: ;
+    }
+
+    #logo #sleft img{
+		width: 70%;
+		height: auto;
+		margin:auto auto 10%;
+	}	
+	#logo #sright{
+		width: 100%;
+		margin-bottom: 5%;
+		float: ;
+	}
+
+	#maskot .nama{
+		display: block;
+		width: 100%;
+		margin: auto;
+	}
+
+	#maskot .nama img{
+	width: 30%;
+	display: block;
+	margin: auto;
+	}
+
+
+	#maskot #nama{
+		display: none;
+	}
+
+	#maskot .des{
+		display: block;
+	}
+
+	#maskot #des{
+		display: none;
+	}
+
+	#maskot #sleft{
+		width: 100%;
+		float: ;
+	
+		padding: auto 5%;
+		margin: 2% 0 5%;
+	}
+
+	#maskot #sleft img{
+		float: none;
+		display: block;
+		width: 70%;
+		margin: auto;
+	}
+
+	#maskot #sright{
+		width: 100%;
+		float: ;
+		padding: auto 5%;
+		margin: 2% 0 5%;
+	}
+
+	#maskot #sright img{
+		float: ;
+		display: block;
+		width: 70%;
+		margin: auto;
+	}
+	.video iframe{
+		width: 90%;
+		height: 50%;
+		display: block;
+		margin: auto;
+	}
+
+	#organigram h1{
+		font-size:  300%;
+	}
+
+	#organigram img{
+		display: none;
+	}
+
+	#organigram ul{
+		width: 85%;
+	}
+
+	#FAQ h1{
+		font-size: 300%;
+	}
+
+	#FAQ img{
+		display: none;
+	}
+
+	#FAQ .ponco{
+		display: block;
+		width: 60%;
+	}
+
+	#kontak{
+	background: url(../img/MCONTACT.jpg) no-repeat center bottom; 
+	-webkit-background-size: 100% 100%;
+	-moz-background-size: 100% 100%;
+	-o-background-size: 100% 100%;
+	height: 50%;
+	}
+
+	#kontak h1{
+		font-size: 300%;
+	}
+
+	#kontak #link ul li{
+		width: 20%;
+		padding: 0% 5%;
+		margin-bottom: 5%;
+	}
+	#kontak #link ul li a img{
+		width: 50%;
+		margin-bottom: 5%;
+	}
+}
